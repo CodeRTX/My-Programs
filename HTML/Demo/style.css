@@ -1,0 +1,26 @@
+.largest-rect{
+ width: 200px;
+ border: 1px solid gray;
+}
+.image-placeholder{
+ width: 200px;
+}
+.title-rect{
+ display: flex;
+ padding: 8px;
+ flex-direction: column;
+ border-bottom: 1px solid gray;
+}
+.list-rect{
+ display: flex;
+ flex-direction: column;
+ padding: 8px;
+}
+.link-rect{
+ display: flex;
+ flex-direction: row;
+ padding: 8px;
+}
+.list-item{
+ border-bottom: 1px solid black;
+}
