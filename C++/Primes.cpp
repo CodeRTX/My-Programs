@@ -26,21 +26,27 @@ int main()
 {
  clrscr();
  unsigned long long int i,n;
- int c=1;
- cout<<"Enter a no.: ";
- cin>>n;
- cout<<"\n";
- float t=n/log(n);
- cout<<"2 ";
- for(i=3;i<=n;i=i+2)
+ int c=0;
+ cout <<"Enter a no. : ";
+ cin >>n;
+ cout <<"\n";
+ if(c==2)
  {
-  if(isprime(i)==1)
+  cout <<"2";
+  c=1;
+ }
+ if(c>2)
+ {
+  for(i=3;i<=n;i=i+2)
   {
-   cout<<""<<i<<" ";
-   c++;
+   if(isprime(i)==1)
+   {
+    cout <<""<<i<<" ";
+    c++;
+   }
   }
  }
- cout<<"\n\nCount= "<<c<<", T="<<t<<endl;                //T & Count approach each other at Infinity.
+ cout <<"\n\nCount= "<<c<<endl;
  getch();
  return 0;
 }
